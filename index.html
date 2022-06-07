@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Fcuksense</title>
 </head>
 <body>
-    MAIN CONTENT
+    <section class="container">
+        <div class="left-col">
+            <img src="./img/logo.png" alt="" class="logo">
+            <div class="text">
+                <h1 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>
+                <p class="description">Welcome back. Please login to your account</p>
+            </div>
+                <form class="form">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="e-mail" required>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Password" required>
+                    <input type="checkbox" id="remember" name="remember" value="checkbox">
+                    <label for="remember" class="rememberpw">Remember me?</label>
+                    <a href="#">Forget password?</a>
+                    <button type="submit" class="btn">Login</button>
+                    <button type="reset" class="btn btn-white">Sign up</button>
+                </form>
+        </div>
+        <div class="right-col">
+            <img src="./img/bg.png" alt="" class="bg-img">
+        </div>
+    </section>
 </body>
 </html>
