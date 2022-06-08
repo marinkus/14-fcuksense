@@ -51,6 +51,10 @@ img {
     display: flex;
     flex-direction: column;
 }
+.box label {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .box textarea,
 input {
     border: none;
@@ -70,13 +74,24 @@ input {
     flex-direction: row;
     justify-content: space-between;
 }
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .form > .checkbox-items > a {
     font-size: 16px;
     color: rgb(138, 136, 136);
     align-self: flex-end;
     text-decoration: none;
 }
-.btn {
+.buttons {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+.buttons > .btn {
     border: solid 2px var(--main-color);
     padding: 10px 25px;
     font-size: 18px;
@@ -84,9 +99,21 @@ input {
     background-color: var(--main-color);
     align-self: flex-start;
 }
-.btn.btn-white {
+.buttons > .btn.btn-white {
     background-color: #fff;
     color: var(--main-color);
+}
+.footers {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #ccc;
+}
+.footers > a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
 }
 .bg-img {
     height: 100%;
